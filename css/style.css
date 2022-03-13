@@ -21,9 +21,9 @@ body.no_scroll {
 a, button, input[type=submit], select{
     cursor: pointer;
 }
-a, a:hover, a:focus, 
+a, a:hover, a:focus,
 button, button:hover, button:focus,
-input, input:hover, input:focus, 
+input, input:hover, input:focus,
 textarea, textarea:hover, textarea:focus,
 select, select:hover, select:focus{
     outline: 0;
@@ -107,10 +107,28 @@ img{
     flex-wrap: wrap;
     margin: 0px -20px;
 }
+.custom_col_4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 20px;
+}
 .custom_col_6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 0 20px;
+}
+.custom_col_12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 20px;
+}
+.custom_col_5part {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
     padding: 0 20px;
 }
 /*commmon grid css end*/
@@ -188,7 +206,7 @@ img{
 }
 .io.rl {
     -webkit-transform: translate3d(80px, 0, 0);
-    transform: translate3d(80px, 0, 0); 
+    transform: translate3d(80px, 0, 0);
 }
 .io.upL {
     -webkit-transform: translate3d(0, 80px, 0);

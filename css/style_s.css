@@ -1,0 +1,326 @@
+.breadcrumb-section{
+    height: 276px;
+} /* once Breadcrumb section Design Complete Remove this */
+
+
+/* services page css start */
+.services_ent_header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 114px;
+}
+.services_ent_header h2{
+    position: relative;
+    color: #0F0F0F;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 28px;
+}
+.services_ent_header h2:before,
+.services_ent_header h2:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+.services_ent_header h2:before{
+    top: -7px;
+    background: #FFEEEE;
+}
+.services_ent_header h2:after{
+    bottom: -7px;
+    background: #FFDDDD;
+}
+.services_ent_header p{
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.services_ent_grid .custom_col_6{
+    margin-bottom: 120px;
+}
+.services_ent_grid .grid_inner_box{
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    background: #FFF;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+}
+.services_ent_grid .pos-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-5%, -62%);
+}
+.services_ent_grid .pos-content h3{
+    color: #0F0F0F;
+    font-size: 83px;
+    font-weight: 500;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.services_ent_grid .pos-content h3 span{
+    color: #FF0000;
+}
+.services_ent_grid .img img{
+    width: 100%;
+}
+.services_ent_grid .category{
+    position: relative;
+    margin: 0 -11px;
+    min-width: 100%;
+    text-align: center;
+    background: #0F0F0F;
+    padding: 4px 0;
+}
+.services_ent_grid .category:before,
+.services_ent_grid .category:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(100% - 10px);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+    z-index: -1;
+}
+.services_ent_grid .category:before{
+    left: 4px;
+    border-left-color: #454545;
+    transform: rotate(-45deg);
+}
+.services_ent_grid .category:after{
+    right: 4px;
+    border-right-color: #454545;
+    transform: rotate(45deg);
+}
+.services_ent_grid .category h4{
+    color: #FFF;
+    font-size: 40px;
+    line-height: 1.3;
+}
+.services_ent_grid .content{
+    padding: 30px 15px 45px;
+}
+.services_ent_grid .content .top_text{
+    position: relative;
+    padding-left: 25px;
+    z-index: 1;
+    margin-bottom: 35px;
+}
+.services_ent_grid .content .top_text:before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-image: url('../images/dot-square-pattern.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    transform: scale(1.3);
+}
+.services_ent_grid .content h5{
+    width: 100%;
+    max-width: 389px;
+    color: #0F0F0F;
+    font-size: 35px;
+    line-height: 1.4;
+    font-weight: 600;
+    border-bottom: 5px solid #FF0000;
+}
+.services_ent_grid .content span{
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+}
+.services_ent_grid .content p{
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.services_tab_section{
+    width: 100%;
+}
+.services_tabs_nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services_tabs_nav li{
+    display: block;
+    flex: 1 0 0;
+    text-align: center;
+}
+.services_tabs_nav li a{
+    display: block;
+    border: 1px solid #111111;
+    background: #F5F5F5;
+    color: #0F0F0F;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 20px 10px;
+}
+.services_tabs_nav li.r-tabs-state-active a{
+    position: relative;
+    background: #FFF;
+    color: #FF0000;
+    border-bottom-color: transparent;
+}
+
+.services_tabs_nav li.r-tabs-state-active a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-width: 0 30px 40px 30px;
+    border-style: solid;
+    border-color: transparent transparent #FFEEEE transparent;
+    transform: translate(0, 13px);
+}
+.services-tabs_content{
+    margin-top: 44px;
+    background: #FFEEEE;
+    padding: 20px 20px 5px;
+}
+.services-tabs_content .custom_col_12{
+    margin: 10px 0 8px;
+}
+.services-tabs_content h4{
+    color: #FF0000;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.services-tabs_content .custom_col_5part{
+    margin-bottom: 20px;
+}
+.services-tabs_content .flex_bx{
+    display: flex;
+    align-items: center;
+}
+.services-tabs_content img{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 14px;
+}
+.services-tabs_content p{
+    color: #0F0F0F;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.service_talent_section{
+    padding: 113px 0 215px;
+}
+.service_talent_profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service_talent_profile .img{
+    width: 30%;
+    max-width: 340px;
+}
+.service_talent_profile .img img{
+    width: 100%;
+}
+.service_talent_profile .content{
+    width: 68%;
+    max-width: 790px;
+}
+.service_talent_profile h4{
+    display: inline-block;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    background: #FF0000;
+    padding: 4px 26px 4px 12px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.service_talent_profile h4 span{
+    font-size: 25px;
+}
+.service_talent_profile table{
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+.service_talent_profile table th,
+.service_talent_profile table td{
+    border-bottom: 1px solid #707070;
+    text-align: left;
+    vertical-align: top;
+}
+.service_talent_profile table th{
+    font-weight: 700;
+}
+.service_talent_profile table thead th{
+    padding: 6px 0;
+    font-size: 25px;
+    color: #707070;
+    text-align: left;
+}
+.service_talent_profile table tbody th,
+.service_talent_profile table tbody td{
+    padding: 15px 20px 10px;
+}
+.service_talent_profile table tbody th{
+    min-width: 200px;
+}
+.service_talent_profile table tfoot th,
+.service_talent_profile table tfoot td{
+    border: none;
+    padding: 18px 20px;
+}
+.service_talent_profile table .social_icon{
+    display: flex;
+}
+.service_talent_profile table .social_icon li{
+    display: block;
+    margin-right: 15px;
+}
+.service_talent_profile table .social_icon a{
+    font-size: 24px;
+    color: #FF0000;
+    line-height: 1;
+}
+.service_talent_para{
+    padding: 62px 0;
+}
+.service_talent_para p{
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 37px;
+}
+.service_talent_para p:last-child{
+    margin-bottom: 0;
+}
+.service_talent_images{
+    margin-top: 50px;
+}
+/* services page css end */
