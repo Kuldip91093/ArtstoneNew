@@ -831,37 +831,34 @@
 			arrows: false,
 			infinite: true,
 			slidesToShow: 2,
-			slidesToScroll: -1,
+			slidesToScroll: 1,
 			centerMode: true,
 			centerPadding: '300px',
 			autoplay: true,
-			speed: 2000,
+			speed: 1800,
 			autoplaySpeed: 0,
 			cssEase: 'linear',
 			responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1230,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true
+				centerPadding: '250px',
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 1167,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+				centerPadding: '0',
+				slidesToShow: 3,
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 901,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
+				centerPadding: '0',
+				slidesToShow: 2,
 				}
-			}
+			},
 			]
 		});
 		$('.news_slider_slider_center').slick({
@@ -879,28 +876,24 @@
 			rtl: true,
 			responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1230,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true
+				centerPadding: '50px',
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 1167,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+				centerPadding: '0px',
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 901,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
+				centerPadding: '0',
+				slidesToShow: 2,
 				}
-			}
+			},
 			]
 		});
 	</script>
