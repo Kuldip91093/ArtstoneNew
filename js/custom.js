@@ -62,13 +62,18 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('.services_tabs').responsiveTabs({
 		startCollapsed: 'accordion',
-		active: 1
-		// animation: 'slide'
+		animation: 'fade',
+		activate: function(event, tab){
+			$(tab.selector).find('.service_talent_slide').slick({
+				infinite: false,
+				prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+				nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+			});
+		}
 	});
 
 	setTimeout(function(){
 		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
 		triggerEl.trigger('click');
-		// console.log(triggerEl)
 	},100);
 });
