@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('../fonts/YuGothic-Bold.eot');
+    src: url('../fonts/YuGothic-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/YuGothic-Bold.woff2') format('woff2'),
+    url('../fonts/YuGothic-Bold.woff') format('woff'),
+    url('../fonts/YuGothic-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura-Bold.eot');
+    src: url('../fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura-Bold.woff2') format('woff2'),
+    url('../fonts/Futura-Bold.woff') format('woff'),
+    url('../fonts/Futura-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans', sans-serif;*/
 /*common css start*/
