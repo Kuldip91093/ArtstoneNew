@@ -69,6 +69,15 @@ $(document).ready(function(){
 				prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
 				nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
 			});
+			$(tab.selector).find('.inner-slide').slick({
+				infinite: true,
+				slidesToShow: 3,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				cssEase: 'ease-in-out',
+				draggable: false
+			});
 		}
 	});
 
