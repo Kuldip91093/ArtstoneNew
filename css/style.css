@@ -462,6 +462,7 @@ a.header_logo {
     padding: 15px 20px;
     margin-right: 0px;
     transition: all 0.4s;
+    font-family: 'Futura';
 }
 .custom_navbar .header_button.inquiry:hover {
     background-color: #0f0f0f;
