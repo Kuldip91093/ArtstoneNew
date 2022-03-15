@@ -31,6 +31,14 @@ $(window).on('load',function() {
 		// 	$(this).removeClass("holder_col").addClass("active_col");
 		// });
 	});
+	(function(d) {
+		var config = {
+			kitId: 'xwv2rte',
+			scriptTimeout: 3000,
+			async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
 });
 
 $(document).ready(function(){
@@ -56,10 +64,98 @@ $(document).ready(function(){
 	// 		scrollTop: 0,
 	// 	}, 800);
 	// });
-});
 
+	// news slider slider JS
+	$('.news_slider_slider').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '300px',
+		autoplay: true,
+		speed: 1800,
+		autoplaySpeed: 0,
+		cssEase: 'linear',
+		pauseOnHover: false,
+		responsive: [
+		{
+			breakpoint: 1230,
+			settings: {
+				centerPadding: '250px',
+			}
+		},
+		{
+			breakpoint: 1167,
+			settings: {
+				centerPadding: '0',
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 901,
+			settings: {
+				centerPadding: '0',
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 676,
+			settings: {
+				centerPadding: '0',
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
 
-$(document).ready(function(){
+	// news slider slider center JS
+	$('.news_slider_slider_center').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '100px',
+		autoplay: true,
+		autoplaySpeed: 0,
+		speed: 2000,
+		cssEase: 'linear',
+		rtl: true,
+		pauseOnHover: false,
+		pauseOnHover: false,	
+		responsive: [
+		{
+			breakpoint: 1230,
+			settings: {
+				centerPadding: '50px',
+			}
+		},
+		{
+			breakpoint: 1167,
+			settings: {
+				centerPadding: '0px',
+			}
+		},
+		{
+			breakpoint: 901,
+			settings: {
+				centerPadding: '0',
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 676,
+			settings: {
+				centerPadding: '0',
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
+
 	$('.services_tabs').responsiveTabs({
 		startCollapsed: 'accordion',
 		animation: 'fade',
@@ -85,4 +181,6 @@ $(document).ready(function(){
 		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
 		triggerEl.trigger('click');
 	},100);
+
+
 });
