@@ -1714,6 +1714,9 @@ form.report_form {
     border: none;
     margin: 50px auto 0px;
     transition: all 0.4s;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 .btn_submit_form:hover {
     background-color: #FF0000
