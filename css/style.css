@@ -992,7 +992,7 @@ footer {
     margin-right: 30px;
     position: relative;
     font-family: 'Futura';
-    font-weight: 700; 
+    font-weight: 700;
 }
 .footer_menu_right ul li a:after {
     content: "";
@@ -1023,7 +1023,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     font-family: 'Futura';
-    font-weight: 700; 
+    font-weight: 700;
 }
 .footer_menu_right ul li a.inquiry:after {
     display: none;
@@ -1064,7 +1064,7 @@ footer {
     padding: 14px 45px 14px 85px;
     margin-bottom: 70px;
 }
-.heading_text_right h3, 
+.heading_text_right h3,
 .heading_text_left h3 {
     font-size: 60px;
     line-height: 87px;
@@ -1320,7 +1320,7 @@ ul.news_tag li span {
     color: #fff;
     line-height: 52px;
     font-family: 'Futura';
-    font-weight: 700;    
+    font-weight: 700;
 }
 .more_box_section .more_box h1 span {
     color: #F90B22;
@@ -1390,7 +1390,7 @@ ul.news_tag li span {
     font-weight: 700;
     line-height: 46px;
     font-family: 'Futura';
-    font-weight: 700; 
+    font-weight: 700;
 }
 .contact_section .contact_content h3 span {
     color: #F90B22;
@@ -1401,7 +1401,7 @@ ul.news_tag li span {
     color: #fff;
     line-height: 32px;
     font-family: 'Yu Gothic';
-    font-weight: 700; 
+    font-weight: 700;
 }
 .contact_section .contact_content p {
     font-size: 16px;
@@ -1409,7 +1409,7 @@ ul.news_tag li span {
     line-height: 28px;
     margin: 25px 0;
     font-family: 'Yu Gothic';
-    font-weight: 500; 
+    font-weight: 500;
 }
 .contact_section .contact_content a {
     display: block;
@@ -1426,7 +1426,7 @@ ul.news_tag li span {
     position: relative;
     transition: all 0.4s;
     font-family: 'Yu Gothic';
-    font-weight: 700; 
+    font-weight: 700;
 }
 .contact_section .contact_content a:hover {
     background-color: #F90B22;
