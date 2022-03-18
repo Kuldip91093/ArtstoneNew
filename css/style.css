@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap'); */
 
 @font-face {
     font-family: 'Yu Gothic';
@@ -66,11 +66,19 @@ img{
     max-width: 100%;
     display: block;
 }
-.cpc {
+.cpc, .cpc-1249 {
     display: block !important;
 }
-.csp {
+.csp, .csp-1249 {
     display: none !important;
+}
+@media (max-width: 1249px) {
+    .cpc-1249{
+        display: none !important;
+    }
+    .csp-1249{
+        display: block !important;
+    }
 }
 @media (max-width: 900px){
     .cpc{

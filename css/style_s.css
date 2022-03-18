@@ -39,7 +39,7 @@
     color: #0F0F0F;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.5;
 }
 .services_ent_grid .custom_col_6{
@@ -64,7 +64,8 @@
     color: #0F0F0F;
     font-size: 83px;
     font-weight: 500;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: italic;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 .services_ent_grid .pos-content h3 span{
@@ -106,7 +107,7 @@
 .services_ent_grid .category h4{
     color: #FFF;
     font-size: 40px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.3;
 }
 .services_ent_grid .content{
@@ -140,7 +141,7 @@
     max-width: 389px;
     color: #0F0F0F;
     font-size: 35px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.4;
     font-weight: 600;
     border-bottom: 5px solid #FF0000;
@@ -148,13 +149,13 @@
 .services_ent_grid .content span{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 }
 .services_ent_grid .content p{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 }
 
@@ -176,7 +177,7 @@
     background: #F5F5F5;
     color: #0F0F0F;
     font-size: 15px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     line-height: 1;
     padding: 20px 10px;
@@ -207,7 +208,7 @@
     background: #F5F5F5;
     color: #0F0F0F;
     font-size: 15px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     line-height: 1;
     padding: 20px 10px;
@@ -229,7 +230,7 @@
 .service_tabs_grider h4{
     color: #FF0000;
     font-size: 15px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     padding-left: 5px;
 }
@@ -250,7 +251,7 @@
 .service_tabs_grider p{
     color: #0F0F0F;
     font-size: 15px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
 }
 
@@ -310,7 +311,7 @@
     display: inline-block;
     color: #FFF;
     font-size: 30px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     background: #FF0000;
     padding: 4px 26px 4px 12px;
@@ -323,7 +324,7 @@
 .service_talent_profile table{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     border-collapse: collapse;
     min-width: 100%;
@@ -389,7 +390,7 @@
 .service_talent_para p{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 37px;
@@ -435,7 +436,7 @@ section.music-production-section{
 .music-prod-topbar .para p{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 28px;
@@ -466,7 +467,7 @@ section.music-production-section{
     margin-bottom: 28px;
     color: #0F0F0F;
     font-size: 45px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     line-height: 1.3;
     white-space: nowrap;
@@ -483,7 +484,7 @@ section.music-production-section{
 .music-glry-layer .content p{
     color: #0F0F0F;
     font-size: 16px;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 28px;
@@ -537,17 +538,18 @@ section.music-production-section{
 /* music page css end */
 
 /* responsive css start */
+@media (max-width: 1249px) {
+    .service_tabs_grider .custom_col_5part{
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
 @media (max-width: 1166px){
     /* services page css start */
     .services_ent_header h2:before,
     .services_ent_header h2:after{
         height: 40%;
-    }
-    .services_ent_header h2:before{
-        top: 0;
-    }
-    .services_ent_header h2:after{
-        bottom: 0;
     }
     .services_ent_grid .pos-content h3{
         font-size: 60px;
@@ -616,14 +618,12 @@ section.music-production-section{
     }
     .service_tabs_grider{
         margin-top: 0;
+        padding: 10px 15px 0;
     }
     .service_tabs_grider .custom_col_5part{
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    .service_tabs_grider img{
-        width: 30px;
-        height: 30px;
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
     }
     .service_talent_section{
         padding: 50px 0 0;
@@ -687,6 +687,18 @@ section.music-production-section{
     }
     /* music page css end */
 }
+@media (max-width: 767px) {
+    .service_tabs_grider .custom_col_5part {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .service_tabs_grider img{
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+}
 @media (max-width: 675px) {
 
     /* services page css start */
@@ -704,6 +716,15 @@ section.music-production-section{
     }
     .services_tabs .r-tabs-accordion-title .r-tabs-anchor{
         padding: 12px;
+    }
+    .service_talent_slide .slick-arrow{
+        top: 12%;
+    }
+    .service_talent_slide .slick-arrow.slick-prev{
+        left: 5px;
+    }
+    .service_talent_slide .slick-arrow.slick-next{
+        right: 5px;
     }
     .service_talent_profile .img{
         width: 100%;
@@ -768,5 +789,12 @@ section.music-production-section{
         padding: 30px 0;
     }
     /* music page css end */
+}
+@media (max-width: 435px) {
+    .service_tabs_grider .custom_col_5part {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 /* responsive css end */

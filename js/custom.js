@@ -125,7 +125,7 @@ $(document).ready(function(){
 		cssEase: 'linear',
 		rtl: true,
 		pauseOnHover: false,
-		pauseOnHover: false,	
+		pauseOnHover: false,
 		responsive: [
 		{
 			breakpoint: 1230,
@@ -162,6 +162,7 @@ $(document).ready(function(){
 		activate: function(event, tab){
 			$(tab.selector).find('.service_talent_slide').slick({
 				infinite: false,
+				// adaptiveHeight: true,
 				prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
 				nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
 			});
