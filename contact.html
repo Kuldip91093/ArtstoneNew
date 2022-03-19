@@ -365,16 +365,5 @@
 	<script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/jquery.lettering.min.js"></script>
 	<script src="js/custom.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('.form_list_tab_title ul li a').click(function(){
-				$('.form_list_tab_title ul li a').removeClass('active_tab');
-				$(this).addClass('active_tab');
-				var tagid = $(this).data('tag');
-				$('.form_list_tab_content .form_tab_content').removeClass('tab_content_active').hide();
-				$('#'+tagid).addClass('tab_content_active').show();
-			});
-		});
-	</script>
 </body>
 </html>

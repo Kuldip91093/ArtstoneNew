@@ -183,5 +183,18 @@ $(document).ready(function(){
 		triggerEl.trigger('click');
 	},100);
 
+	// form list tab title JS
+	$('.form_list_tab_title ul li a').click(function(){
+		$('.form_list_tab_title ul li a').removeClass('active_tab');
+		$(this).addClass('active_tab');
+		var tagid = $(this).data('tag');
+		$('.form_list_tab_content .form_tab_content').removeClass('tab_content_active').hide();
+		$('#'+tagid).addClass('tab_content_active').show();
+	});
 
+	// faq content JS
+	$(".faq_content").accordion({
+		heightStyle: "content",
+		collapsible: true
+	});
 });

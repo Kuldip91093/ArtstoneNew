@@ -3004,6 +3004,19 @@ section.music-production-section{
     }
 }
 @media (max-width: 900px) {
+    .custom_container {
+        padding: 0 15px !important;
+    }
+    .custom_row {
+        margin: 0 -15px !important;
+    }
+    .custom_col_4,
+    .custom_col_6,
+    .custom_col_8,
+    .custom_col_12,
+    .custom_col_5part {
+        padding: 0 15px !important;
+    }
     header {
         padding: 5px 10px;
     }
@@ -3394,19 +3407,6 @@ section.music-production-section{
     }
 }
 @media (max-width: 675px) {
-    .custom_container {
-        padding: 0 15px !important;
-    }
-    .custom_row {
-        margin: 0 -15px !important;
-    }
-    .custom_col_4,
-    .custom_col_6,
-    .custom_col_8,
-    .custom_col_12,
-    .custom_col_5part {
-        padding: 0 15px !important;
-    }
     .custom_col_6 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
