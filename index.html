@@ -74,20 +74,13 @@
 		</div>
 		<div class="city">
 			<img src="images/banner_bottom_icons/item01.gif" alt="" class="walkerLeft01" />
-			<img src="images/banner_bottom_icons/item01.gif" alt="" class="walkerL2" />
-			<img src="images/banner_bottom_icons/item02.gif" alt="" class="walkerRight01"/>
 			<img src="images/banner_bottom_icons/item02.gif" alt="" class="walkerR2"/>
-			<img src="images/banner_bottom_icons/item09.gif" alt="" class="carL02"/> 
-			<img src="images/banner_bottom_icons/item04.gif" alt="" class="walkerRight02"/>
-			<img src="images/banner_bottom_icons/item04.gif" alt="" class="walkerR3"/>
-			<img src="images/banner_bottom_icons/item05.gif" alt="" class="walkerRight03"/>
-			<img src="images/banner_bottom_icons/item03.gif" alt="" class="carL01" />
-			<img src="images/banner_bottom_icons/item07.gif" alt="" class="walkerLeft03" />	 	
 			<img src="images/banner_bottom_icons/item06.gif" alt="" class="travelerR" />
-			<img src="images/banner_bottom_icons/item10.gif" alt="" class="walkerLeft02" /> 
-			<img src="images/banner_bottom_icons/item11.gif" alt="" class="walkerRight04" />
-			<img src="images/banner_bottom_icons/taxi_1L.gif" alt="" class="taxi_1L">
-			<img src="images/banner_bottom_icons/taxi_2L.gif" alt="" class="taxi_2L">
+			<img src="images/banner_bottom_icons/item07.gif" alt="" class="walkerLeft03" />
+			<img src="images/banner_bottom_icons/item08.gif" alt="" class="item08">
+			<img src="images/banner_bottom_icons/item09.gif" alt="" class="item09">
+			<img src="images/banner_bottom_icons/item10.gif" alt="" class="item10" />
+			<img src="images/banner_bottom_icons/item11.gif" alt="" class="walkerLeft02" />
 			<img src="images/banner_bottom_icons/plane.png" alt="" class="plane">
 		</div>
 	</section>
@@ -525,12 +518,12 @@
 
 			var wSize = $(window).width();
 			var hSize = $(window).height();
-			var runnerW = wSize*0.01877
-			var itemW = wSize*0.11307
+			var runnerW = wSize*0.02277
+			var itemW = wSize*0.03307
 			var carB = wSize*0.07507
 			var carL2W = wSize*0.06007
 			var carW = wSize*0.06907
-			var runner2W = wSize*0.03107
+			var runner2W = wSize*0.02207
 			var wRight04W= wSize*0.06307
 			var travelR= wSize*0.02807
 			var plane=wSize*0.03577
@@ -553,13 +546,25 @@
 			$(".taxi_1L").width(carW);
 			$(".taxi_2L").width(carW);
 			$(".item08").width(itemW);
+			$(".item09").width(itemW);
+			$(".item10").width(itemW);
 
 			randomPos();
 			function randomPos(){
 				$(".city .item08").each(function(){
 					var peopleRdmPos = Math.round( Math.random()*0 );
-					var peopleRdmPos78 = peopleRdmPos + 78
-					$(this).css({left:peopleRdmPos78+"%"})
+					var peopleRdmPos69 = peopleRdmPos + 69
+					$(this).css({left:peopleRdmPos69+"%"})
+				});
+				$(".city .item09").each(function(){
+					var peopleRdmPos = Math.round( Math.random()*0 );
+					var peopleRdmPos54 = peopleRdmPos + 54
+					$(this).css({left:peopleRdmPos54+"%"})
+				});
+				$(".city .item10").each(function(){
+					var peopleRdmPos = Math.round( Math.random()*0 );
+					var peopleRdmPos40 = peopleRdmPos + 40
+					$(this).css({left:peopleRdmPos40+"%"})
 				});
 			}
 

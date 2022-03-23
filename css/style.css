@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+x@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
 
 @font-face {
@@ -651,7 +651,7 @@ a.header_logo {
 }
 .city .walkerLeft02 {
     position: absolute;
-    bottom: 0;
+    bottom: -5px !important;
     left: 60%;
 }
 .city .walkerLeft03 {
@@ -692,7 +692,15 @@ a.header_logo {
 }
 .city .item08 {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
+}
+.city .item09 {
+    position: absolute;
+    bottom: -6px;
+}
+.city .item10 {
+    position: absolute;
+    bottom: -12px;
 }
 .banner_text_section {
     position: absolute;
