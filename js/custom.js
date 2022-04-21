@@ -75,7 +75,7 @@ $(document).ready(function(){
 		centerMode: true,
 		centerPadding: '300px',
 		autoplay: true,
-		speed: 1800,
+		speed: 3500,
 		autoplaySpeed: 0,
 		cssEase: 'linear',
 		pauseOnHover: false,
@@ -121,7 +121,7 @@ $(document).ready(function(){
 		centerPadding: '100px',
 		autoplay: true,
 		autoplaySpeed: 0,
-		speed: 2000,
+		speed: 3000,
 		cssEase: 'linear',
 		rtl: true,
 		pauseOnHover: false,
@@ -156,32 +156,6 @@ $(document).ready(function(){
 		]
 	});
 
-	$('.services_tabs').responsiveTabs({
-		startCollapsed: 'accordion',
-		animation: 'fade',
-		activate: function(event, tab){
-			$(tab.selector).find('.service_talent_slide').slick({
-				infinite: false,
-				// adaptiveHeight: true,
-				prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
-				nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
-			});
-			$(tab.selector).find('.inner-slide').slick({
-				infinite: true,
-				slidesToShow: 3,
-				arrows: false,
-				autoplay: true,
-				autoplaySpeed: 1000,
-				cssEase: 'ease-in-out',
-				draggable: false
-			});
-		}
-	});
-
-	setTimeout(function(){
-		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
-		triggerEl.trigger('click');
-	},100);
 
 	// form list tab title JS
 	$('.form_list_tab_title ul li a').click(function(){
@@ -197,4 +171,32 @@ $(document).ready(function(){
 		heightStyle: "content",
 		collapsible: true
 	});
+
+	// responsive Tabs JS
+	$('.services_tabs').responsiveTabs({
+		startCollapsed: 'accordion',
+		animation: 'fade',
+		activate: function(event, tab){
+			$(tab.selector).find('.service_talent_slide').slick({
+				infinite: false,
+				// adaptiveHeight: true,
+				prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+				nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+			});
+			$(tab.selector).find('.inner-slide').slick({
+				infinite: true,
+				slidesToShow: 3,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				cssEase: 'ease-in-out',
+				draggable: false
+			});
+		}
+	});
+
+	setTimeout(function(){
+		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
+		triggerEl.trigger('click');
+	},100);
 });

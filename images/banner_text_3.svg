@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="261" height="44" viewBox="0 0 261 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_101855" data-name="Rectangle 101855" width="261" height="44" transform="translate(553 498)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Gallery_Virtual_YouTuber_Character_Music_and_more" x="-7.815" y="-7.5" width="277" height="59" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#111"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Gallery_Virtual_YouTuber_Character_Music_and_more-2" x="-7.815" y="-7.5" width="277" height="59" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-color="#111"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(-553 -498)" clip-path="url(#clip-path)">
+    <g id="Group_6518" data-name="Group 6518">
+      <g transform="matrix(1, 0, 0, 1, 553, 498)" filter="url(#Gallery_Virtual_YouTuber_Character_Music_and_more)">
+        <text id="Gallery_Virtual_YouTuber_Character_Music_and_more-3" data-name="Gallery / Virtual YouTuber /
+Character / Music and more" transform="translate(-0.32 17)" fill="#fff" font-size="18" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Gallery / Virtual YouTuber /</tspan><tspan x="0" y="22">Character / Music and more</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 553, 498)" filter="url(#Gallery_Virtual_YouTuber_Character_Music_and_more-2)">
+        <text id="Gallery_Virtual_YouTuber_Character_Music_and_more-4" data-name="Gallery / Virtual YouTuber /
+Character / Music and more" transform="translate(-0.32 17)" fill="#fff" font-size="18" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Gallery / Virtual YouTuber /</tspan><tspan x="0" y="22">Character / Music and more</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
