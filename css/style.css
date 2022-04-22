@@ -610,10 +610,20 @@ a.header_logo {
     background-position: center bottom;
     background-size: 100%;
 }
-.city .plane{
+.city .plane {
     position: absolute;
     bottom:30px;
     left:-15px;
+}
+.city .birdleft{
+    position: absolute;
+    bottom:150px;
+    left:-15px;
+}
+.city .birdright{
+    position: absolute;
+    bottom:150px;
+    right:-15px;
 }
 .city .travelerR {
     position: absolute;

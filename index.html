@@ -81,6 +81,8 @@
 			<img src="images/banner_bottom_icons/item10.gif" alt="" class="item10" />
 			<img src="images/banner_bottom_icons/item11.gif" alt="" class="walkerLeft02" />
 			<img src="images/banner_bottom_icons/plane.png" alt="" class="plane">
+			<img src="images/banner_bottom_icons/item12.gif" alt="" class="birdleft" />
+			<img src="images/banner_bottom_icons/item13.gif" alt="" class="birdright" />
 		</div>
 	</section>
 	<section class="services_section">
@@ -527,6 +529,8 @@
 			var travelR= wSize*0.02807
 			var plane=wSize*0.03577
 			$(".plane").width(plane);
+			$(".birdleft").width(carB);
+			$(".birdright").width(carB);
 			$(".walkerRight01").width(runnerW);
 			$(".walkerR2").width(runnerW);
 			$(".walkerRight02").width(runnerW);
@@ -574,7 +578,55 @@
 			$(".city .plane").css({left:planeRdmPos+"%"});
 			$(".city .plane").delay(rdmDelay+2000).animate({left:100+"%",bottom:350+"px"},planeRdmPosDis*60,"linear",function(){
 				$(".city .plane").css({left:-20.384+"%" ,bottom:30+"px"});
+				planeLoop();
 			});
+			
+			function planeLoop(){
+				setInterval(function(){
+					var rdmDelay = Math.round( Math.random()*8000 );
+					$(".city .plane").delay(rdmDelay+2000).animate({left:100+"%",bottom:350+"px"},planeRdmPosDis*60,"linear").animate({left:100+"%",bottom:0},30000,"linear",function(){
+						$(".city .plane").css({left:-20.384+"%" ,bottom:30+"px"});
+					});
+				},100);
+			}
+
+			//birds
+			var planeRdmPos = Math.round( Math.random()*(-50) );
+			var planeRdmPosDis = 100 - planeRdmPos;
+			var rdmDelay = Math.round( Math.random()*600 );
+			$(".city .birdleft").css({left:planeRdmPos+"%"});
+			$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear",function(){
+				$(".city .birdleft").css({left:-20.384+"%" ,bottom:150+"px"});
+				birdLoop();
+			});
+			
+			function birdLoop(){
+				setInterval(function(){
+					var rdmDelay = Math.round( Math.random()*8000 );
+					$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear").animate({left:100+"%",bottom:0},30000,"linear",function(){
+						$(".city .birdleft").css({left:-20.384+"%" ,bottom: 150+"px"});
+					});
+				},100);
+			}
+
+			//birds
+			var planeRdmPos = Math.round( Math.random()*(-50) );
+			var planeRdmPosDis = 100 - planeRdmPos;
+			var rdmDelay = Math.round( Math.random()*200 );
+			$(".city .birdright").css({right:planeRdmPos+"%"});
+			$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear",function(){
+				$(".city .birdright").css({right:-20.384+"%" ,bottom:150+"px"});
+				birdLoop();
+			});
+			
+			function birdLoop(){
+				setInterval(function(){
+					var rdmDelay = Math.round( Math.random()*8000 );
+					$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear").animate({right:100+"%",bottom:0},30000,"linear",function(){
+						$(".city .birdright").css({right:-20.384+"%" ,bottom: 150+"px"});
+					});
+				},100);
+			}
 			
 			//walkerLeft
 			//walkerLeft01
