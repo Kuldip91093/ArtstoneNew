@@ -629,6 +629,10 @@ a.header_logo {
     position: absolute;
     bottom: 0;
 }
+.city .travelerL {
+    position: absolute;
+    bottom: 0;
+}
 .city .carL01 {
     position: absolute;
     bottom: 0;
@@ -642,7 +646,7 @@ a.header_logo {
 .city .taxi_1L {
     position: absolute;
     bottom: 0;
-    left: -20%;
+    right: 10%;
 }
 .city .taxi_2L {
     position: absolute;
@@ -2747,7 +2751,7 @@ section.music-production-section{
     font-size: 20px;
     line-height: 1;
     color: #FF0000;
-    font-weight: 500;
+    font-weight: 400;
     position: absolute;
     top: 20px;
     left: 32px;
@@ -2794,11 +2798,10 @@ section.music-production-section{
     font-size: 20px;
     line-height: 1;
     color: #FF0000;
-    font-weight: 500;
-    font-family: 'Futura';
     position: absolute;
     top: 0px;
     left: 32px;
+    font-weight: 400;
 }
 .faq_section img.dot_square_pattern_second {
     position: absolute;

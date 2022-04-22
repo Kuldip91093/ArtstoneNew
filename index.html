@@ -83,6 +83,8 @@
 			<img src="images/banner_bottom_icons/plane.png" alt="" class="plane">
 			<img src="images/banner_bottom_icons/item12.gif" alt="" class="birdleft" />
 			<img src="images/banner_bottom_icons/item13.gif" alt="" class="birdright" />
+			<img src="images/banner_bottom_icons/item14.png" alt="" class="travelerL" />
+			<img src="images/banner_bottom_icons/item15.png" alt="" class="taxi_1L" />
 		</div>
 	</section>
 	<section class="services_section">
@@ -871,9 +873,9 @@
 			
 			//carL03
 			setInterval(function(){
-				var rdmDelay = Math.round( Math.random()*8000 );
-				$(".city .taxi_1L").delay(rdmDelay+1000).animate({left:-40+"%",bottom:0},10000,"linear",function(){
-					$(".city .taxi_1L").css({left:100+"%"});
+				var rdmDelay = Math.round( Math.random()*5000 );
+				$(".city .taxi_1L").delay(rdmDelay+1000).animate({right:-40+"%",bottom:0},10000,"linear",function(){
+					$(".city .taxi_1L").css({right:100+"%"});
 				});
 			},100);
 
