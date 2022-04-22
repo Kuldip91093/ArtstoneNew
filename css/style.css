@@ -2649,6 +2649,10 @@ section.music-production-section{
     font-weight: 700;
     color: #fff;
     font-size: 18px;
+    transition: all 0.4s;
+}
+.job_type_section .job_type_btns_list a:hover {
+    background-color: #0f0f0f;
 }
 .job_type_section .custom_col_text {
     -ms-flex: 0 0 calc(100% - 280px);
