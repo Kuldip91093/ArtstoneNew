@@ -65,10 +65,10 @@
 		</div>
 		<div class="banner_text_section">
 			<h1 class="banner_title">Art Stone Entertainment</h1>
-			<p class="banner_sub_title"><img src="images/banner_text_1.svg" alt="banner text"></p>
-			<p class="banner_sub_text"><img src="images/banner_text_2.svg" alt="banner text"></p>
+			<p class="banner_sub_title"><img src="images/banner_text_1.png" alt="banner text"></p>
+			<p class="banner_sub_text"><img src="images/banner_text_2.png" alt="banner text"></p>
 			<span class="arts_and_more">
-				<img src="images/banner_text_3.svg" alt="banner text">
+				<img src="images/banner_text_3.png" alt="banner text">
 			</span>
 		</div>
 		<div class="city">
@@ -83,8 +83,8 @@
 			<img src="images/banner_bottom_icons/plane.png" alt="" class="plane">
 			<img src="images/banner_bottom_icons/item12.gif" alt="" class="birdleft" />
 			<img src="images/banner_bottom_icons/item13.gif" alt="" class="birdright" />
-			<img src="images/banner_bottom_icons/item14.png" alt="" class="travelerL" />
-			<img src="images/banner_bottom_icons/item15.png" alt="" class="taxi_1L" />
+			<!-- <img src="images/banner_bottom_icons/item14.png" alt="" class="travelerL" />
+			<img src="images/banner_bottom_icons/item15.png" alt="" class="taxi_1L" /> -->
 		</div>
 	</section>
 	<section class="services_section">
@@ -426,7 +426,7 @@
 					※絵画に関するご質問も、こちらからお願い致します。<br>
 					※VASEライバーオーディションに関するお問い合わせには<br>
 				回答できません。予めご了承ください。</p>
-				<a href="#">お問い合わせフォームへ<i class="fas fa-chevron-right"></i></a>
+				<a href="contact.html">お問い合わせフォームへ<i class="fas fa-chevron-right"></i></a>
 			</div>
 		</div>
 	</section>
@@ -544,11 +544,11 @@
 			$(".walkerLeft03").width(runner2W);
 			$(".walkerR3").width(runnerW);
 			$(".walkerL3").width(runnerW);
-			$(".travelerL").width(runnerW);
+			// $(".travelerL").width(runnerW);
 			$(".travelerR").width(travelR);
 			$(".carL01").width(carB);
 			$(".carL02").width(carL2W);
-			$(".taxi_1L").width(carW);
+			// $(".taxi_1L").width(carW);
 			$(".taxi_2L").width(carW);
 			$(".item08").width(itemW);
 			$(".item09").width(itemW);
@@ -597,7 +597,7 @@
 			var planeRdmPosDis = 100 - planeRdmPos;
 			var rdmDelay = Math.round( Math.random()*600 );
 			$(".city .birdleft").css({left:planeRdmPos+"%"});
-			$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear",function(){
+			$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*260,"linear",function(){
 				$(".city .birdleft").css({left:-20.384+"%" ,bottom:150+"px"});
 				birdLoop();
 			});
@@ -605,7 +605,7 @@
 			function birdLoop(){
 				setInterval(function(){
 					var rdmDelay = Math.round( Math.random()*8000 );
-					$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear").animate({left:100+"%",bottom:0},30000,"linear",function(){
+					$(".city .birdleft").delay(rdmDelay+2000).animate({left:100+"%",bottom: 0+"px"},planeRdmPosDis*260,"linear").animate({left:100+"%",bottom:0},30000,"linear",function(){
 						$(".city .birdleft").css({left:-20.384+"%" ,bottom: 150+"px"});
 					});
 				},100);
@@ -616,7 +616,7 @@
 			var planeRdmPosDis = 100 - planeRdmPos;
 			var rdmDelay = Math.round( Math.random()*200 );
 			$(".city .birdright").css({right:planeRdmPos+"%"});
-			$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear",function(){
+			$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*260,"linear",function(){
 				$(".city .birdright").css({right:-20.384+"%" ,bottom:150+"px"});
 				birdLoop();
 			});
@@ -624,7 +624,7 @@
 			function birdLoop(){
 				setInterval(function(){
 					var rdmDelay = Math.round( Math.random()*8000 );
-					$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*60,"linear").animate({right:100+"%",bottom:0},30000,"linear",function(){
+					$(".city .birdright").delay(rdmDelay+2000).animate({right:100+"%",bottom: 0+"px"},planeRdmPosDis*260,"linear").animate({right:100+"%",bottom:0},30000,"linear",function(){
 						$(".city .birdright").css({right:-20.384+"%" ,bottom: 150+"px"});
 					});
 				},100);
@@ -830,12 +830,12 @@
 			}
 			
 			//travelerL
-			setInterval(function(){
-				var rdmDelay = Math.round( Math.random()*20000 );
-				$(".city .travelerL").delay(rdmDelay+4000).animate({left:50+"%",bottom:0+"%"},19000,"linear").animate({left:100+"%",bottom:0},19000,"linear",function(){
-					$(".city .travelerL").css({left:-3.384+"%"});
-				});
-			},100);
+			// setInterval(function(){
+			// 	var rdmDelay = Math.round( Math.random()*20000 );
+			// 	$(".city .travelerL").delay(rdmDelay+4000).animate({left:50+"%",bottom:0+"%"},19000,"linear").animate({left:100+"%",bottom:0},19000,"linear",function(){
+			// 		$(".city .travelerL").css({left:-3.384+"%"});
+			// 	});
+			// },100);
 			
 			//travelerR
 			var travelerRRdmPos = Math.round( Math.random()*50 );
@@ -872,12 +872,12 @@
 			},100);
 			
 			//carL03
-			setInterval(function(){
-				var rdmDelay = Math.round( Math.random()*5000 );
-				$(".city .taxi_1L").delay(rdmDelay+1000).animate({right:-40+"%",bottom:0},10000,"linear",function(){
-					$(".city .taxi_1L").css({right:100+"%"});
-				});
-			},100);
+			// setInterval(function(){
+			// 	var rdmDelay = Math.round( Math.random()*5000 );
+			// 	$(".city .taxi_1L").delay(rdmDelay+1000).animate({right:-40+"%",bottom:0},10000,"linear",function(){
+			// 		$(".city .taxi_1L").css({right:100+"%"});
+			// 	});
+			// },100);
 
 			//carL04
 			setInterval(function(){
