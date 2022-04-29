@@ -1,4 +1,4 @@
-x@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
 
 @font-face {
@@ -2620,7 +2620,7 @@ section.music-production-section{
 .job_type_table_row {
     display: table-row;
 }
-.job_type_table_th, 
+.job_type_table_th,
 .job_type_table_td {
     display: table-cell;
     padding: 15px 0;
@@ -3091,7 +3091,7 @@ section.music-production-section{
     bottom: -470px;
     right: -190px;
 }
-.news_details_section .float_images img.dot_square_pattern_3 {}
+/* .news_details_section .float_images img.dot_square_pattern_3 {} */
 /*news details section css end*/
 
 /*news details page section section css start*/
@@ -3165,7 +3165,7 @@ section.music-production-section{
     .heading_text_right {
         padding: 14px 69px 14px 80px;
     }
-    .heading_text_right h3, 
+    .heading_text_right h3,
     .heading_text_left h3 {
         font-size: 48px;
         line-height: 52px;

@@ -192,6 +192,13 @@ $(document).ready(function(){
 				cssEase: 'ease-in-out',
 				draggable: false
 			});
+			$(tab.selector).find('.service_slide_handler').each(function(index){
+				$(this).attr('data-slide-index', index);
+			});
+			$('.service_slide_handler').click(function(){
+				var currSliderIndex = $(this).attr('data-slide-index');
+				$(tab.selector).find('.service_talent_slide').slick('slickGoTo', currSliderIndex);
+			});
 		}
 	});
 
